@@ -1,14 +1,12 @@
 
 import {useTask} from '../context/taskContext'
-
+import Layout from '../components/Layout'
 export default function Home() {
-  const {hello,great} = useTask()
-  console.log(hello)
-  console.log(great("pepe"))
-
+  const {tasks} = useTask()
+  console.log(tasks)
   return (
-    <div >
-      Hom:{hello}
-    </div>
+    <Layout >
+    <h1>Hello World!</h1>
+    </Layout>
   )
 }
